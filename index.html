@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<meta charset="UTF-8" >
+	<title>播放</title>
+	<style>
+		#au{padding:4px 1px; max-width: 100%;height: auto;width:100%;background-color:#96daa9;}
+		#au_a{width: 100%;vertical-align: middle;}
+	</style>
+
+</head>
+<body>
+	<!-- <div><video controls id="aa" onclick="playl()" >
+		<source src="video/Coldplay - Adventure Of A Lifetime .mp4" type="video/mp4">	不支持HTML5播放
+		</video>
+	</div> -->
+	<input type="file" id="file" onchange="onInputFileChange()"> 
+	<div id="au" onclick="playl()"><audio  id='au_a' controls autoplay='autoplay'>
+		<!-- <source src="video/japan.mp3" type="audio/mpeg"> -->
+		不支持HTML5播放
+		</audio>
+	</div>
+</body>
+<script type="text/javascript">
+	function playl(){
+		var b=document.getElementById('au_a');
+		if(b.paused)b.play();
+		else b.pause();
+	}
+	function onInputFileChange() { 
+		var file = document.getElementById('file').files[0]; 
+		var url = URL.createObjectURL(file); 
+		console.log(url); 
+		document.getElementById("au_a").src = url; 
+} 
+	</script>
+</html>
