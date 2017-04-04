@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="http://apps.bdimg.com/libs/jquery/1.8.2/jquery.min.js" type="text/javascript"></script>
+</head>
+<body>
+	<div>
+            <ul id='ul1'>
+                <li>aaaaaaaaaaaaa</li>
+                 <li>aaaaaaaaaaa</li>
+                <li>aaaaaaaaaaaa</li> 
+                <p>dddddddddddddddd</p> 
+            </ul>
+        </div>
+</body>
+<script type='text/javascript'>
+    (function($){
+        $.fn.extend({
+            "focusColor":function(li_col){
+            	var def_col="#ccc";
+            	li_col=(li_col==undefined)?def_col:li_col;
+				$(this).find('li').each(function(){
+					$(this).mouseover(function(){
+					    $(this).css("background-color",li_col);
+					}).mouseout(function(){
+						$(this).css("background-color",'#fff');
+					});
+				})   
+             return $(this);   
+            }
+        });
+    })(jQuery); 
+    $(function(){
+    	$("ul").focusColor();
+
+    });33
+
+    
+    </script>
+</html>
