@@ -1,0 +1,8 @@
+text()
+html()
+val() 表单字段的值，输入的值
+attr()    attr("属性","值");
+返回或者设置内容
+第三个功能是有回调函数
+text(function(i,origText){return i+origText;})
+attr('href',)

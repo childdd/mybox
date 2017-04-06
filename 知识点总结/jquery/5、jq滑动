@@ -1,0 +1,3 @@
+slideDown(speed,callback);
+slideUp
+slideToggle

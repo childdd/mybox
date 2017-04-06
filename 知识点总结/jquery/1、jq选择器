@@ -1,0 +1,8 @@
+$('p:first')  选择第一个p元素。
+$('ul li:first') 选择第一个ul里的第一个li。
+$('ul li:first-child') 选取每个ul的第一个li。
+$('[href]') 选取每个带href属性的元素。
+$("a[target!='_blank']") 选取所有target属性值不等于——blank的<a>元素。
+$(":button") 选取所有type="button"的<input>和<button>元素.
+$("tr:even") 选取偶数tr
+$("tr:odd") 选取奇数tr

@@ -1,0 +1,2 @@
+hide(speed,callback);speed可取值'slow''fast' 或者毫秒。callback是完成后执行的函数名。
+toggle() 显示隐藏切换

@@ -1,0 +1,9 @@
+animate({params},speed,callback);
+animate({left:'250px',opacity:'0.5'},'slow');
+对位置的操作，需要把元素css设置position为relative absolute或者fixed。
+
+注意：1、属性必须使用camel法书写，paddingLeft，marginRight。
+2、颜色动画不包含在核心库里，需要另外下载颜色插件。
+3、可以使用+=和-=表示属性值的相对变化。
+4、属性值可以设置成'show' 'hide' 'toggle'
+5、一系列动画有队列功能，一个一个实现。

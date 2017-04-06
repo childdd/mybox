@@ -1,0 +1,1 @@
+stop(stopAll,goToEnd); stopAll默认是false，仅停止当前动画。选true后，只是当前的goToEnd。

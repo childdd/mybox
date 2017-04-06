@@ -1,0 +1,11 @@
+鼠标 click dblclick mouseenter mouseleave  mouseover mouseout 
+键盘 keypress keydown keyup 
+表单 submit change focus blur 
+文档窗口 load resize scroll unload
+$(document).ready(function(){});加载完成后触发函数，或者$(function({}));
+每个事件都有一个函数处理
+dblclick() 双击时触发函数
+hover(function(){},function(){}) ;
+.css("background-color","#ccc");
+blur 失去焦点
+
